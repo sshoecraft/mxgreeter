@@ -1,0 +1,16 @@
+server = "http://localhost:8008"
+server_name = "mckesson"
+username = "greeter"
+password = "greeter"
+
+rooms = [
+    "#General:mckesson",
+]
+
+admin_user = "admin"
+admin_password = "admin"
+
+# Seconds between full user list polls (safety net behind presence events)
+poll_interval = 60
+
+verbose = true

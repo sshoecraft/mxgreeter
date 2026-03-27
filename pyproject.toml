@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mxgreeter"
+version = "0.2.0"
+description = "Auto-join bot for Matrix/Synapse — ensures users are in required rooms"
+requires-python = ">=3.11"
+dependencies = [
+    "matrix-nio>=0.24",
+    "aiohttp",
+]
+
+[tool.setuptools.packages.find]
+include = ["mxgreeter*"]
+
+[project.scripts]
+mxgreeter = "mxgreeter.cli:main"
